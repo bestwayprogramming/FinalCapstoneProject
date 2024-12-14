@@ -172,8 +172,8 @@ const AllProduct = () => {
                               </Flex>
                               <Tooltip title={product.description}>
                                 <p>
-                                  {product.description.slice(0, 20)}
-                                  {product.description.length > 20 && "..."}
+                                  {product.description?.slice(0, 20)}
+                                  {product.description?.length > 20 && "..."}
                                 </p>
                               </Tooltip>
                             </Space>
